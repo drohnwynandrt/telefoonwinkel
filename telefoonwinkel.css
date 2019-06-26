@@ -1,0 +1,30 @@
+#navigationbar{
+
+        background-color: black;
+        text-align: center;
+        max-width: 1400px;
+        font-size: 140%; 
+        margin: 6px;
+        padding: 15px;
+        margin-left:auto;
+        margin-right:auto;
+
+}
+#navigationbar a:link{
+color:white;
+}
+
+#navigationbar a:visited {
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.frontbox{
+    background-image: url("samsungs10.png");
+    height:500px;
+}
