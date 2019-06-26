@@ -4,7 +4,7 @@
         text-align: center;
         max-width: 1400px;
         font-size: 140%; 
-        margin: 6px;
+        margin: auto;
         padding: 15px;
         margin-left:auto;
         margin-right:auto;
@@ -25,6 +25,11 @@ color:white;
 }
 
 .frontbox{
-    background-image: url("samsungs10.png");
-    height:500px;
+    display: flex;
+    width: 600px;
+}
+
+.frontparagraph{
+    width: 300px;
+
 }
