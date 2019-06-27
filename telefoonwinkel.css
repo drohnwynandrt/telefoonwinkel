@@ -1,20 +1,16 @@
 body{
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto; 
-}
 
 #navigationbar{
 
         background-color: black;
         text-align: center;
-        max-width: 1400px;
+        max-width: 1024px;
         font-size: 140%; 
+        margin: auto;
         padding: 15px;
         margin-left:auto;
         margin-right:auto;
@@ -29,24 +25,34 @@ color:white;
 }
 .mainitem{
     text-align:center;
+    max-width: 1024px;
     margin: 5px 0px;
 }
+
+.mainitem img{
+    max-width:100%;
+}
 .container{
+    box-sizing:border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
-
+@media screen and (max-width: 1024px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
 .frontbox{
-    display: flex;
-    width: 512px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.frontbox img {
-    width: 256px; 
+.fronttext{
+    width: 256px;
 }
-
-.frontparagraph{
+.frontimage{
     width: 256px;
 }
 
