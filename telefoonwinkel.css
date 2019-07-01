@@ -24,8 +24,9 @@ color:white;
     color: white;
 }
 .mainitems{
-position:absolute;
+position:relative;
 margin: 5px 0px;
+max-width:1024px;
 }
 
 .mainitems img{
