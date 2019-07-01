@@ -15,12 +15,30 @@ function completeOrder(){
         alert ("Please fill in your e-mail")
     }
     else  {
-        alert("Thank you "+ customerName+" for your purchase. We will contact you through e-mail!");
+        alert("Thank you "+ customerName+" for contacting us. We will reply to your message by e-mail within 5 business days!");
         document.location.reload() ;
     } 
 }
 
-function cancelOrder(){
-    document.location.reload() ;
-    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
